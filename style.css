@@ -1,0 +1,95 @@
+
+@font-face { font-family: 'apple'; src: url('apple.otf'); }
+
+body
+{
+    color: white;
+    background-color: black;
+    font-family: 'apple'; font-size: 21px;
+}
+
+::selection { background-color: #fadf59; color: #000000; }
+
+.n
+{ 
+    cursor: pointer; position: absolute; left: calc(50%); 
+    user-select: none; white-space: nowrap;
+}
+
+.n:hover { color: #ffc306; }
+
+.a
+{ 
+    color: #747474; position: absolute; font-size: 12px;
+    left: calc(50%); line-height: 2; text-align: center;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 601px)
+{ 
+    .n { top: calc(50% - 20px); transform: translate(-50%,-50%); }
+    .a { top: calc(50% + 30px); transform: translate(-50%,-50%); }
+}
+
+@media screen and (max-width: 600px)
+{ 
+    .n { bottom: 99px; transform: translate(-50%,0%); }
+    .a { bottom: 37px; transform: translate(-50%,0%); }
+}
+
+img { width: 100px; }
+
+.one
+{ 
+    position: absolute; top: calc(50%); left: calc(50% - 300px);
+    transform: translate(-50%,-50%);
+}
+
+.two
+{ 
+    position: absolute; top: calc(50% + 190px); left: calc(50% + 115px);
+    transform: translate(-50%,-50%);
+}
+
+.three
+{ 
+    position: absolute; top: calc(50% + 190px); left: calc(50% - 115px);
+    transform: translate(-50%,-50%);
+}
+
+.four
+{ 
+    position: absolute; top: calc(50%); left: calc(50% + 300px);
+    transform: translate(-50%,-50%);
+}
+
+.five
+{ 
+    position: absolute; top: calc(50% - 192px); left: calc(50%);
+    transform: translate(-50%,-50%);
+}
+
+.text
+{
+    position: absolute; text-align: center; font-size: 13px; top: calc(50%);
+    white-space: nowrap; left: calc(50%); transform: translate(-50%,0%);
+}
+
+.t1 { margin-top: 15px; color: #a7312c; } .t2 { margin-top: 15px; color: #9d9388; }
+.t3 { margin-top: 15px; color: #e7caa9; } .t4 { margin-top: 15px; color: #55aaca; }
+.t5 { margin-top: 15px; color: #4276b9; }
+
+@media screen and (max-width: 600px)
+{ 
+    img { width: 80px; } .text { font-size: 11px; }
+
+    .one   { top: calc(50% -  62px); left: calc(50% - 64px); }
+    .two   { top: calc(50% +  97px); left: calc(50% - 64px); }
+    .three { top: calc(50% -  62px); left: calc(50% + 64px); }
+    .four  { top: calc(50% +  97px); left: calc(50% + 64px); }
+    .five  { top: calc(50% - 211px); left: calc(50%); }
+
+    .t1 { margin-top: 10px; } .t2 { margin-top: 10px; }
+    .t3 { margin-top: 10px; } .t4 { margin-top: 10px; }
+    .t5 { margin-top: 10px; }
+}
